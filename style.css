@@ -1,10 +1,12 @@
 .container {
     background-color: #4b4b4b;
-    width: 700px;
+    max-width: 700px;
     min-height: 300px;
-    /*margin-left: 0px;*/
+    border-radius: 20px;
+    box-shadow: -1px 3px 28px gray;
     margin-top: 20px;
     color: white;
+    font-family: Ubuntu;
 }
 h2 {
     font-family: arial;
@@ -29,24 +31,20 @@ form {
     font-family: garamond;
     color: white;
 }
-.clear {
-    background-color: green;
-    color: white;
-    font-weight: 700;
-}
 .input-group {
     width: 400px;
 }
-/*.item {
-    margin-top: 20px;
-}*/
-
 .item > li {
     border: 1px solid rgb(229, 229, 229);
-    background-color: rgb(38, 169, 255);
-    color: white;
-    border-radius: 6px;
-    margin-top: 4px;
+    /*    background-color: #5bc0de;*/
+
+color: white;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: -25px;
+}
+.item > li:hover {
+    background-color: #9BC7D4;
 }
 .hide {
     display: none;
@@ -58,5 +56,20 @@ form {
     color: white;
 }
 .col-lg-6 {
-  width: 100%;
+    width: 100%;
+}
+.done {
+    background-color: rgb(36, 176, 73);
+}
+.btn {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.btn-success {
+    margin-left: 0;
+    width: 120px;
+}
+.btn-danger {
+    width: 90px;
+    float: right;
 }
