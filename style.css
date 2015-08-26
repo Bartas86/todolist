@@ -1,0 +1,62 @@
+.container {
+    background-color: #4b4b4b;
+    width: 700px;
+    min-height: 300px;
+    /*margin-left: 0px;*/
+    margin-top: 20px;
+    color: white;
+}
+h2 {
+    font-family: arial;
+}
+form {
+    display: inline-block;
+}
+#button {
+    display: inline-block;
+    height: 20px;
+    width: 70px;
+    background-color: #cc0000;
+    font-family: arial;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.list {
+    font-family: garamond;
+    color: white;
+}
+.clear {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+.input-group {
+    width: 400px;
+}
+/*.item {
+    margin-top: 20px;
+}*/
+
+.item > li {
+    border: 1px solid rgb(229, 229, 229);
+    background-color: rgb(38, 169, 255);
+    color: white;
+    border-radius: 6px;
+    margin-top: 4px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.item > ol {
+    color: white;
+}
+.col-lg-6 {
+  width: 100%;
+}
