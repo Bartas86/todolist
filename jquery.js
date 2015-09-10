@@ -27,7 +27,8 @@ $(document).ready(function() {
         });
     // click to FINISH
         if (!$(this).find('#done1').length) {
-          $(this).append('<span id="done1">Finished</span>').fadeIn(1000).css('margin-right', '17px');
+          $(this).append('<span id="done1">Finished</span>').fadeIn(1000).css({'margin-right': '17px', 'color': 'white'});
+          
         }
 
 
