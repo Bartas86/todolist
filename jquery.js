@@ -1,6 +1,9 @@
 $(document).ready(function() {
     $('.btn-success').click(function() {
         var toAdd = $('input[name=checkListItem]').val();
+        if (toAdd.length < 1){
+            alert("Pole tekstowe nie może być puste.")
+        }else{
         // Adding a new li on the list
         $('.item').append("<li>" + "<span>" + toAdd + "</span>" + "</li>").css({
             'margin-top': '5px',
@@ -8,7 +11,7 @@ $(document).ready(function() {
             'color': 'white',
             'margin-left': '5px'
         });
-
+        }
 
     });
     // Double click to remove li
