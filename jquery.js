@@ -1,18 +1,18 @@
 $(document).ready(function() {
     $('.btn-success').click(function() {
         var toAdd = $('input[name=checkListItem]').val();
-        if (toAdd.length < 1){
+        if (toAdd.length < 1) {
             alert("Pole tekstowe nie może być puste.")
-        }else{
-        // Adding a new li on the list
-        $('.item').append("<li>" + "<span>" + toAdd + "</span>" + "</li>").css({
-            'margin-top': '5px',
-            'display': 'block',
-            'color': 'white',
-            'margin-left': '5px'
-        });
+        } else {
+            // Adding a new li on the list
+            $('.item').append("<li>" + "<span>" + toAdd + "</span>" + "</li>").css({
+                'margin-top': '5px',
+                'display': 'block',
+                'color': 'white',
+                'margin-left': '5px',
+                'position': 'relative'
+            });
         }
-
     });
     // Double click to remove li
     $(document).on('dblclick', 'li', function() {
@@ -28,13 +28,13 @@ $(document).ready(function() {
         $(this).css({
             'background-color': 'rgb(92, 184, 92)',
         });
-    // click to FINISH
+        // click to FINISH
         if (!$(this).find('#done1').length) {
-          $(this).append('<span id="done1">Finished</span>').fadeIn(1000).css({'margin-right': '17px', 'color': 'white'});
-          
+            $(this).append('<span id="done1">Finished</span>').fadeIn(1000).css({
+                'margin-right': '17px',
+                'color': 'white'
+            });
         }
-
-
     });
     // Clear All data from the list
     $('.clear').click(function() {
