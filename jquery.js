@@ -25,9 +25,11 @@ $(document).ready(function() {
     });
     // 1 click to highlight
     $(document).on('click', 'li', function() {
-        $(this).css({
-            'background-color': 'rgb(92, 184, 92)',
-        });
+        // $(this).css({
+        //     'background-color': 'rgb(92, 184, 92)',
+        // });
+        console.log(this);
+        $(this).toggleClass("highlight");
         // click to FINISH
         if (!$(this).find('#done1').length) {
             $(this).append('<span id="done1">Finished</span>').fadeIn(1000).css({

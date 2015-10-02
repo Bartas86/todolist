@@ -117,3 +117,6 @@ span h2 {
 .warning{
   color: red;
 }
+.highlight{
+    background-color: #5cb85c!important;
+}
