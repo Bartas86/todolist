@@ -3,7 +3,11 @@ $(document).ready(function() {
         var toAdd = $('input[name=checkListItem]').val();
         if (toAdd.length < 1) {
             alert("Pole tekstowe nie może być puste.")
-        } else {
+        }else if (toAdd === "dupa") {
+            alert("Bez słów wulgarnych.")
+            $('.form-control').css('background-color', 'red');
+        } 
+        else {
             // Adding a new li on the list
             $('.item').append("<li>" + "<span>" + toAdd + "</span>" + "</li>").css({
                 'margin-top': '5px',
@@ -50,5 +54,6 @@ $(document).ready(function() {
     // Clear input on a click
     $('.form-control').focus(function() {
         $('.form-control').val("");
+        $('.form-control').css('background-color', 'white');
     });
 });
