@@ -93,11 +93,12 @@ form {
 .btn-success {
     margin-left: 0;
     width: 120px;
+    float: left;
 }
 
 .btn-danger {
     width: 90px;
-    float: right;
+    float: left;
 }
 
 span h2 {
@@ -114,9 +115,20 @@ span h2 {
 .head1 {
     font-style: italic;
 }
-.warning{
-  color: red;
+
+.warning {
+    color: red;
 }
-.highlight{
+
+.highlight {
     background-color: #5cb85c!important;
+}
+.add{
+    width: 21%;
+    float: left;
+}
+.clearall{
+    width: 30%;
+    float: left;
+    margin-right: 5px;
 }
